@@ -80,7 +80,7 @@ export default function Home() {
             <div className="text-center">
               <div className="text-4xl mb-4">🤝</div>
               <h3 className="text-lg font-semibold mb-2 font-poppins text-gray-800">Long-Term Support</h3>
-              <p className="text-gray-700 font-inter">We're here for you even after launch.</p>
+              <p className="text-gray-700 font-inter">We&apos;re here for you even after launch.</p>
             </div>
             <div className="text-center">
               <div className="text-4xl mb-4">💰</div>
@@ -113,10 +113,10 @@ export default function Home() {
           <div className="bg-gray-50 p-8 rounded-lg">
             <h3 className="text-xl font-semibold mb-6 font-poppins text-gray-800 text-center">Founder's Note</h3>
             <blockquote className="text-lg text-gray-700 font-inter italic leading-relaxed mb-4">
-              "At DigiWave India, we believe every business — no matter how small — deserves a strong digital presence.
+              &quot;At DigiWave India, we believe every business — no matter how small — deserves a strong digital presence.
               Our mission is simple yet bold: to empower 1 million small businesses to go digital by 2030.
               We leverage AI-driven tools and smart automation to deliver fast, affordable, and modern digital solutions — helping small businesses launch apps and websites in record time.
-              Because when India's small businesses grow, India grows."
+              Because when India&apos;s small businesses grow, India grows.&quot;
             </blockquote>
             <p className="text-right text-gray-800 font-medium font-poppins">— Founder, DigiWave India</p>
           </div>
@@ -182,7 +182,7 @@ export default function Home() {
       {/* CTA Footer Banner */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 font-poppins">Let's bring your business online today</h2>
+          <h2 className="text-3xl font-bold mb-4 font-poppins">Let&apos;s bring your business online today</h2>
           <a href="#contact" className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-100 transition-colors inline-block">
             Contact Us
           </a>
