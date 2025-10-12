@@ -1,0 +1,15 @@
+{
+  "redirects": [
+    {
+      "source": "/",
+      "has": [
+        {
+          "type": "host",
+          "value": "digiwaveindia.in"
+        }
+      ],
+      "destination": "https://digiwaveindia.com",
+      "permanent": true
+    }
+  ]
+}

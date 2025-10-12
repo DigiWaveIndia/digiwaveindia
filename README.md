@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DigiWave India - Official Website
 
-## Getting Started
+> Empowering a Million Small Businesses to Go Digital by 2030
 
-First, run the development server:
+## 🌟 About
+
+DigiWave India is a technology-driven studio helping small businesses go digital through powerful, fast, and affordable apps and websites. We leverage AI-driven tools and smart automation to deliver modern digital solutions in record time.
+
+## 🚀 Live Website
+
+- **Primary**: [digiwaveindia.com](https://digiwaveindia.com)
+- **Alternate**: [digiwaveindia.in](https://digiwaveindia.in) (redirects to .com)
+
+## 🛠️ Tech Stack
+
+- **Framework**: Next.js 15 with App Router
+- **Styling**: Tailwind CSS 4
+- **Fonts**: Poppins (headings) + Inter (body)
+- **Forms**: Formspree integration
+- **Deployment**: Vercel
+- **Version Control**: Git + GitHub
+
+## 🎯 Features
+
+- ✅ Responsive mobile-first design
+- ✅ Contact form with validation
+- ✅ Indian mobile number validation
+- ✅ SEO optimized (sitemap, robots.txt)
+- ✅ Fast loading with Next.js optimization
+- ✅ Professional typography and colors
+- ✅ Smooth scrolling navigation
+
+## 🏃‍♂️ Quick Start
 
 ```bash
+# Install dependencies
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+
+# Build for production
+npm run build
+
+# Start production server
+npm start
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 📧 Contact
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Email**: support@digiwaveindia.com
+- **Phone**: +91-9281040446
+- **Location**: Based in India | Serving Clients Worldwide
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+© 2025 DigiWave India. Smart Digital Solutions for Every Business.
