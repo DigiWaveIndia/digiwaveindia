@@ -111,7 +111,7 @@ export default function Home() {
           </div>
 
           <div className="bg-gray-50 p-8 rounded-lg">
-            <h3 className="text-xl font-semibold mb-6 font-poppins text-gray-800 text-center">Founder's Note</h3>
+            <h3 className="text-xl font-semibold mb-6 font-poppins text-gray-800 text-center">Founder&apos;s Note</h3>
             <blockquote className="text-lg text-gray-700 font-inter italic leading-relaxed mb-4">
               &quot;At DigiWave India, we believe every business — no matter how small — deserves a strong digital presence.
               Our mission is simple yet bold: to empower 1 million small businesses to go digital by 2030.
