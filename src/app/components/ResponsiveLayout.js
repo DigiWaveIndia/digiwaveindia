@@ -9,6 +9,14 @@ export default function ResponsiveLayout() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    // Prevent browser scroll restoration
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const checkScreenSize = () => {
       setIsMobile(window.innerWidth < 768);
     };

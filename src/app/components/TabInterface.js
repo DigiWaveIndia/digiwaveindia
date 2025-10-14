@@ -1,10 +1,18 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import ContactForm from './ContactForm';
 
 export default function TabInterface() {
   const [activeTab, setActiveTab] = useState('home');
+
+  useEffect(() => {
+    // Prevent browser scroll restoration
+    if ('scrollRestoration' in history) {
+      history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+  }, []);
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);
