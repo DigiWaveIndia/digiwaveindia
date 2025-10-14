@@ -8,7 +8,10 @@ export default function TabInterface() {
 
   const handleTabChange = (tabId) => {
     setActiveTab(tabId);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+    // Small delay to ensure tab content is rendered before scrolling
+    setTimeout(() => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }, 50);
   };
 
   const ContactSection = () => (
@@ -57,19 +60,19 @@ export default function TabInterface() {
           
           {/* Tab Navigation */}
           <nav className="flex justify-center">
-            <div className="flex bg-gray-100 rounded-lg p-1">
+            <div className="inline-flex bg-gray-100 rounded-lg p-1 overflow-x-auto scrollbar-hide">
               {tabs.map((tab) => (
                 <button
                   key={tab.id}
                   onClick={() => handleTabChange(tab.id)}
-                  className={`px-4 py-2 rounded-md text-sm font-medium transition-colors flex items-center gap-2 ${
+                  className={`flex-shrink-0 px-2 sm:px-3 py-2 rounded-md text-xs sm:text-sm font-medium transition-colors flex items-center gap-1 whitespace-nowrap ${
                     activeTab === tab.id
                       ? 'bg-blue-600 text-white'
                       : 'text-gray-600 hover:text-blue-600'
                   }`}
                 >
-                  <span>{tab.icon}</span>
-                  {tab.label}
+                  <span className="text-sm">{tab.icon}</span>
+                  <span className="hidden xs:inline sm:inline">{tab.label}</span>
                 </button>
               ))}
             </div>
