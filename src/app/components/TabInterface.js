@@ -229,9 +229,12 @@ export default function TabInterface() {
             {/* Contact Banner */}
             <section className="bg-gradient-to-br from-blue-50 to-cyan-50 -mx-4 px-4 py-12 md:py-16 mb-12 md:mb-16 rounded-lg">
               <div className="text-center">
-                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6 font-poppins">
-                  Let&apos;s bring your business online today
+                <h1 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4 font-poppins">
+                  Let&apos;s bring your business online and make it discoverable to millions
                 </h1>
+                <p className="text-lg md:text-xl text-gray-600 font-inter">
+                  Start your digital journey with us today and grow faster than ever.
+                </p>
               </div>
             </section>
             

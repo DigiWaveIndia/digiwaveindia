@@ -207,7 +207,8 @@ export default function ResponsiveLayout() {
       {/* CTA Footer Banner */}
       <section className="py-16 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 font-poppins">Let&apos;s bring your business online today</h2>
+          <h2 className="text-3xl font-bold mb-4 font-poppins">Let&apos;s bring your business online and make it discoverable to millions</h2>
+          <p className="text-lg mb-6 font-inter">Start your digital journey with us today and grow faster than ever.</p>
           <a href="#contact" className="bg-white text-blue-600 px-8 py-4 rounded-lg text-lg font-medium hover:bg-gray-100 transition-colors inline-block">
             Contact Us
           </a>
