@@ -1,8 +1,10 @@
 import { ImageResponse } from 'next/og'
 
-export const runtime = 'edge'
 export const alt = 'DigiWave India - Smart Digital Solutions'
-export const size = { width: 1200, height: 630 }
+export const size = {
+  width: 1200,
+  height: 630,
+}
 export const contentType = 'image/png'
 
 export default async function Image() {
@@ -10,59 +12,53 @@ export default async function Image() {
     (
       <div
         style={{
-          height: '100%',
+          background: 'linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%)',
           width: '100%',
+          height: '100%',
           display: 'flex',
           flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%)',
+          color: 'white',
           fontFamily: 'system-ui',
         }}
       >
         <div
           style={{
-            display: 'flex',
-            alignItems: 'center',
-            marginBottom: '40px',
+            fontSize: 72,
+            fontWeight: 'bold',
+            marginBottom: 20,
           }}
         >
-          <div
-            style={{
-              width: '80px',
-              height: '80px',
-              background: 'white',
-              borderRadius: '20px',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              marginRight: '20px',
-              fontSize: '24px',
-              fontWeight: 'bold',
-              color: '#3B82F6',
-            }}
-          >
-            DWI
-          </div>
-          <div
-            style={{
-              fontSize: '72px',
-              fontWeight: 'bold',
-              color: 'white',
-            }}
-          >
-            DigiWave India
-          </div>
+          DigiWave
         </div>
         <div
           style={{
-            fontSize: '32px',
-            color: 'rgba(255, 255, 255, 0.9)',
-            textAlign: 'center',
-            maxWidth: '800px',
+            fontSize: 24,
+            opacity: 0.9,
+            marginBottom: 40,
           }}
         >
-          Smart Digital Solutions for Every Business
+          India
+        </div>
+        <div
+          style={{
+            fontSize: 32,
+            textAlign: 'center',
+            maxWidth: 800,
+            lineHeight: 1.2,
+          }}
+        >
+          Fast, Affordable Mobile Apps & Websites
+        </div>
+        <div
+          style={{
+            fontSize: 24,
+            marginTop: 20,
+            opacity: 0.8,
+          }}
+        >
+          Empowering Small Businesses to Thrive Digitally
         </div>
       </div>
     ),

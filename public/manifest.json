@@ -1,0 +1,16 @@
+{
+  "name": "DigiWave India",
+  "short_name": "DigiWave",
+  "description": "Fast, affordable mobile apps and websites for small businesses",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2563eb",
+  "icons": [
+    {
+      "src": "/icon",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ]
+}

@@ -1,7 +1,9 @@
 import { ImageResponse } from 'next/og'
 
-export const runtime = 'edge'
-export const size = { width: 32, height: 32 }
+export const size = {
+  width: 32,
+  height: 32,
+}
 export const contentType = 'image/png'
 
 export default function Icon() {
@@ -9,25 +11,19 @@ export default function Icon() {
     (
       <div
         style={{
+          fontSize: 20,
+          background: '#2563eb',
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-          background: 'linear-gradient(135deg, #3B82F6 0%, #06B6D4 100%)',
-          borderRadius: '6px',
+          color: 'white',
+          fontWeight: 'bold',
+          borderRadius: '4px',
         }}
       >
-        <div
-          style={{
-            fontSize: '12px',
-            fontWeight: 'bold',
-            color: 'white',
-            fontFamily: 'system-ui',
-          }}
-        >
-          DWI
-        </div>
+        DW
       </div>
     ),
     {
