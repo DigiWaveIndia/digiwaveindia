@@ -133,7 +133,7 @@ export default function ResponsiveLayout() {
 
           <div className="mb-12 text-center">
             <h3 className="text-2xl font-semibold mb-4 font-poppins text-gray-800">Our Mission</h3>
-            <p className="text-xl text-blue-600 font-semibold mb-2 font-poppins">Empowering a Million Small Businesses to Go Digital by 2030.</p>
+            <p className="text-xl text-blue-600 font-semibold mb-2 font-poppins">Empowering Small Businesses to Thrive Digitally.</p>
             <p className="text-lg text-gray-700 font-inter">
               We simplify technology so every entrepreneur can thrive in the digital era.
             </p>
@@ -143,11 +143,14 @@ export default function ResponsiveLayout() {
             <h3 className="text-xl font-semibold mb-6 font-poppins text-gray-800 text-center">Founder&apos;s Note</h3>
             <blockquote className="text-lg text-gray-700 font-inter italic leading-relaxed mb-4">
               &quot;At DigiWave India, we believe every business — no matter how small — deserves a strong digital presence.
-              Our mission is simple yet bold: to empower 1 million small businesses to go digital by 2030.
+              Our mission is simple yet powerful: to empower small businesses to thrive digitally.
               We leverage AI-driven tools and smart automation to deliver fast, affordable, and modern digital solutions — helping small businesses launch apps and websites in record time.
               Because when India&apos;s small businesses grow, India grows.&quot;
             </blockquote>
-            <p className="text-right text-gray-800 font-medium font-poppins">— Founder, DigiWave India</p>
+            <div className="text-right text-gray-800 font-medium font-poppins">
+              <p>— Siva</p>
+              <p>Founder, Semiforge</p>
+            </div>
           </div>
         </div>
       </section>
@@ -195,7 +198,7 @@ export default function ResponsiveLayout() {
                 </div>
                 <div className="flex items-center">
                   <span className="text-2xl mr-4">📞</span>
-                  <span className="font-inter text-gray-800 text-lg">+91-9281040446</span>
+                  <span className="font-inter text-gray-800 text-lg">+91-9848120409</span>
                 </div>
                 <div className="flex items-center">
                   <span className="text-2xl mr-4">🌐</span>
