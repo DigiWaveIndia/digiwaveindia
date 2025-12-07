@@ -1,5 +1,5 @@
-import ResponsiveLayout from './components/ResponsiveLayout';
+import HomePage from './components/pages/HomePage';
 
 export default function Home() {
-  return <ResponsiveLayout />;
+  return <HomePage />;
 }

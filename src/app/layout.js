@@ -1,4 +1,4 @@
-import { Poppins, Inter } from "next/font/google";
+import { Poppins, Inter } from 'next/font/google';
 import "./globals.css";
 
 const poppins = Poppins({
@@ -13,9 +13,10 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "DigiWave India | Fast, Affordable Mobile Apps & Websites",
-  description: "Empowering small businesses to thrive digitally. We build modern Flutter apps and Next.js websites with AI-driven tools. Fast delivery, transparent pricing.",
-  keywords: "mobile app development, website development, Flutter apps, Next.js websites, small business digital solutions, India",
+  metadataBase: new URL('https://digiwaveindia.com'),
+  title: "DigiWave India | Empowering India's Small Businesses to Go Digital",
+  description: "Fast, affordable, AI-powered digital solutions for Indian small businesses. Smart websites, customer engagement systems, and mobile apps. 3-tier digital growth framework.",
+  keywords: "small business digital solutions India, PWA websites, customer engagement, mobile app development, AI automation, affordable websites, WhatsApp automation",
   authors: [{ name: "Siva", url: "https://digiwaveindia.com" }],
   creator: "DigiWave India",
   publisher: "DigiWave India",
@@ -27,8 +28,8 @@ export const metadata = {
   },
   manifest: '/manifest.json',
   openGraph: {
-    title: "DigiWave India | Fast, Affordable Mobile Apps & Websites",
-    description: "Empowering small businesses to thrive digitally. We build modern Flutter apps and Next.js websites with AI-driven tools.",
+    title: "DigiWave India | Empowering India's Small Businesses to Go Digital",
+    description: "Fast, affordable, AI-powered digital solutions for Indian small businesses. Smart websites, customer engagement, and mobile apps.",
     url: "https://digiwaveindia.com",
     siteName: "DigiWave India",
     type: "website",
@@ -42,8 +43,8 @@ export const metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "DigiWave India | Fast, Affordable Mobile Apps & Websites",
-    description: "Empowering small businesses to thrive digitally. We build modern Flutter apps and Next.js websites with AI-driven tools.",
+    title: "DigiWave India | Empowering India's Small Businesses to Go Digital",
+    description: "Fast, affordable, AI-powered digital solutions for Indian small businesses. Smart websites, customer engagement, and mobile apps.",
     creator: "@digiwaveindia",
     images: ['/opengraph-image'],
   },

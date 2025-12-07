@@ -20,9 +20,9 @@ export default function MobileMenu() {
         <div className="absolute top-full left-0 right-0 bg-white shadow-lg border-t">
           <div className="px-4 py-2 space-y-2">
             <a href="#home" className="block py-2 text-gray-700 hover:text-blue-600" onClick={() => setIsOpen(false)}>Home</a>
-            <a href="#about" className="block py-2 text-gray-700 hover:text-blue-600" onClick={() => setIsOpen(false)}>About</a>
             <a href="#services" className="block py-2 text-gray-700 hover:text-blue-600" onClick={() => setIsOpen(false)}>Services</a>
             <a href="#contact" className="block py-2 text-gray-700 hover:text-blue-600" onClick={() => setIsOpen(false)}>Contact</a>
+            <a href="#contact" className="block py-2 bg-blue-600 text-white rounded-lg text-center font-medium" onClick={() => setIsOpen(false)}>Get Started</a>
           </div>
         </div>
       )}
