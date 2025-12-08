@@ -15,38 +15,41 @@ export default function HomePage() {
       
       <main className="pt-16">
         {/* Hero Section */}
-        <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-gray-900 text-white overflow-hidden">
-          <div className="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNjAiIGhlaWdodD0iNjAiIHZpZXdCb3g9IjAgMCA2MCA2MCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48ZyBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiPjxnIGZpbGw9IiNmZmZmZmYiIGZpbGwtb3BhY2l0eT0iMC4wNSI+PHBhdGggZD0iTTM2IDE2YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00em0wIDI0YzAtMi4yMSAxLjc5LTQgNC00czQgMS43OSA0IDQtMS43OSA0LTQgNC00LTEuNzktNC00ek0xMiAxNmMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHptMCAyNGMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0LTEuNzkgNC00IDQtNC0xLjc5LTQtNHoiLz48L2c+PC9nPjwvc3ZnPg==')] opacity-30"></div>
-          
-          <div className="relative max-w-7xl mx-auto px-4 py-20 md:py-32">
-            <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-4xl md:text-6xl font-bold mb-6 font-poppins leading-tight">
-                Empowering India's Small Businesses to Go Digital — 
-                <span className="block mt-2 text-cyan-400">Fast, Affordable & Smart</span>
-              </h1>
-              
-              <p className="text-lg md:text-xl mb-4 text-gray-300 font-inter leading-relaxed max-w-3xl mx-auto">
-                Websites, mini-apps, automation, and business dashboards that help small businesses grow with ease.
-              </p>
-              <p className="text-xl md:text-2xl font-semibold text-orange-400 mb-10">
-                Your business — visible, measurable, predictable.
-              </p>
-              
-              <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Link href="/contact" className="bg-cyan-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-600 transition-all shadow-lg hover:shadow-xl transform hover:-translate-y-1">
-                  Book a Free Demo
-                </Link>
-                <a href="https://wa.me/919281040446" target="_blank" rel="noopener noreferrer" className="bg-green-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition-all flex items-center gap-2">
-                  <span>💬</span> Talk to Us on WhatsApp
-                </a>
-              </div>
-            </div>
+        <section className="relative h-[600px] md:h-[700px] overflow-hidden">
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img 
+              src="/images/digital_transformation.avif" 
+              alt="Digital transformation and technology"
+              className="w-full h-full object-cover object-center"
+              style={{objectFit: 'cover', objectPosition: 'center'}}
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-slate-900/70 via-slate-900/50 to-slate-900/20"></div>
           </div>
           
-          <div className="absolute bottom-0 left-0 right-0">
-            <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0Z" fill="#f8fafc"/>
-            </svg>
+          {/* Content Overlay */}
+          <div className="relative h-full flex items-center">
+            <div className="max-w-7xl mx-auto px-4 w-full">
+              <div className="max-w-3xl">
+                <h1 className="text-5xl md:text-7xl font-bold mb-6 font-poppins leading-tight text-white">
+                  Empowering Small Businesses
+                  <span className="block mt-2 text-cyan-400">to Go Digital</span>
+                </h1>
+                
+                <p className="text-xl md:text-2xl mb-10 text-gray-100 font-inter">
+                  Fast. Affordable and Smart. Built with enterprise-grade technology.
+                </p>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Link href="/pricing#quote-form" className="bg-cyan-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-600 transition-all shadow-lg hover:shadow-xl">
+                    Book Free Consultation
+                  </Link>
+                  <a href="https://wa.me/919281040446" target="_blank" rel="noopener noreferrer" className="bg-white/10 backdrop-blur-sm border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white/20 transition-all flex items-center gap-2 justify-center">
+                    <span>💬</span> WhatsApp Us
+                  </a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -197,7 +200,7 @@ export default function HomePage() {
             </div>
 
             <div className="text-center">
-              <Link href="/services" className="inline-block bg-slate-900 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-slate-800 transition-colors">
+              <Link href="/services" className="inline-block bg-cyan-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-600 transition-colors">
                 View All Services
               </Link>
             </div>
@@ -267,10 +270,10 @@ export default function HomePage() {
                 { icon: '⚡', title: 'Fast Delivery', desc: 'Websites in days, apps in weeks' },
                 { icon: '💰', title: 'Affordable Pricing', desc: 'Designed for Indian SMBs' },
                 { icon: '🎨', title: 'Modern UI/UX', desc: 'Clean & beautiful designs' },
-                { icon: '📱', title: 'PWA + WhatsApp + App', desc: 'Complete ecosystem expertise' },
-                { icon: '🔒', title: 'Transparent Pricing', desc: 'Clear communication & costs' },
-                { icon: '🤝', title: 'Lifetime Support', desc: 'Support options available' },
-                { icon: '✓', title: 'Only What You Need', desc: 'No unnecessary apps' },
+                { icon: '📱', title: 'Complete Ecosystem', desc: 'PWA, WhatsApp & Mobile Apps' },
+                { icon: '🔒', title: 'Secure & Reliable', desc: 'Enterprise-grade security' },
+                { icon: '🤝', title: 'Ongoing Support', desc: 'We’re here when you need us' },
+                { icon: '📈', title: 'Scalable Solutions', desc: 'Grows with your business' },
               ].map((item, idx) => (
                 <div key={idx} className="bg-slate-50 p-6 rounded-xl border border-slate-200 hover:shadow-lg transition-shadow">
                   <div className="text-4xl mb-3">{item.icon}</div>

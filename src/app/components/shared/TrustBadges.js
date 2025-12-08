@@ -16,7 +16,7 @@ export default function TrustBadges() {
         </div>
         <div>
           <div className="font-semibold text-gray-900">Fast Delivery</div>
-          <div className="text-sm">3-7 Days</div>
+          <div className="text-sm">Days - Weeks</div>
         </div>
       </div>
       <div className="flex items-center gap-2 text-gray-600">
