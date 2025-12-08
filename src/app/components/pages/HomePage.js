@@ -19,7 +19,7 @@ export default function HomePage() {
           {/* Background Image */}
           <div className="absolute inset-0">
             <img 
-              src="/images/digital_transformation.avif" 
+              src="/images/digital_transformation.jpg" 
               alt="Digital transformation and technology"
               className="w-full h-full object-cover object-center"
               style={{objectFit: 'cover', objectPosition: 'center'}}
