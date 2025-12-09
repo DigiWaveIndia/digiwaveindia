@@ -60,6 +60,8 @@ export default function RootLayout({ children }) {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="theme-color" content="#2563eb" />
         <link rel="canonical" href="https://digiwaveindia.com" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-icon.svg" />
       </head>
       <body
         className={`${poppins.variable} ${inter.variable} antialiased`}
