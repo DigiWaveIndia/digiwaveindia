@@ -19,11 +19,12 @@ export default function ContactForm() {
 
     const cleanMobile = mobile ? mobile.replace(/[\s-()]/g, '') : '';
     const indianMobilePattern = /^(\+91|91)?[6-9]\d{9}$/;
-    
+
     if (!mobile) {
       errors.mobile = 'Mobile number is required';
     } else if (!indianMobilePattern.test(cleanMobile)) {
-      errors.mobile = 'Enter valid Indian mobile number (10 digits starting with 6-9)';
+      errors.mobile =
+        'Enter valid Indian mobile number (10 digits starting with 6-9)';
     }
 
     if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
@@ -45,14 +46,14 @@ export default function ContactForm() {
 
     setErrors({});
     setIsSubmitting(true);
-    
+
     try {
       const response = await fetch('https://formspree.io/f/mnngojnp', {
         method: 'POST',
         body: formData,
         headers: {
-          'Accept': 'application/json'
-        }
+          Accept: 'application/json',
+        },
       });
 
       if (response.ok) {
@@ -74,48 +75,66 @@ export default function ContactForm() {
           ✅ Message sent successfully! We&apos;ll get back to you soon.
         </div>
       )}
-      
+
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label className="block text-sm font-medium text-gray-800 mb-2 font-inter">Name *</label>
-          <input 
-            type="text" 
-            name="name" 
+          <label className="block text-sm font-medium text-gray-800 mb-2 font-inter">
+            Name *
+          </label>
+          <input
+            type="text"
+            name="name"
             className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 ${
               errors.name ? 'border-red-500' : 'border-gray-300'
-            }`} 
+            }`}
           />
-          {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
+          {errors.name && (
+            <p className="text-red-500 text-sm mt-1">{errors.name}</p>
+          )}
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-800 mb-2 font-inter">Email (Optional)</label>
-          <input 
-            type="email" 
-            name="email" 
+          <label className="block text-sm font-medium text-gray-800 mb-2 font-inter">
+            Email (Optional)
+          </label>
+          <input
+            type="email"
+            name="email"
             className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 ${
               errors.email ? 'border-red-500' : 'border-gray-300'
-            }`} 
+            }`}
           />
-          {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+          {errors.email && (
+            <p className="text-red-500 text-sm mt-1">{errors.email}</p>
+          )}
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-800 mb-2 font-inter">Mobile Number *</label>
-          <input 
-            type="tel" 
-            name="mobile" 
+          <label className="block text-sm font-medium text-gray-800 mb-2 font-inter">
+            Mobile Number *
+          </label>
+          <input
+            type="tel"
+            name="mobile"
             className={`w-full px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800 ${
               errors.mobile ? 'border-red-500' : 'border-gray-300'
-            }`} 
-            placeholder="+91-XXXXXXXXXX" 
+            }`}
+            placeholder="+91-XXXXXXXXXX"
           />
-          {errors.mobile && <p className="text-red-500 text-sm mt-1">{errors.mobile}</p>}
+          {errors.mobile && (
+            <p className="text-red-500 text-sm mt-1">{errors.mobile}</p>
+          )}
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-800 mb-2 font-inter">Message</label>
-          <textarea rows="4" name="message" className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800"></textarea>
+          <label className="block text-sm font-medium text-gray-800 mb-2 font-inter">
+            Message
+          </label>
+          <textarea
+            rows="4"
+            name="message"
+            className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-gray-800"
+          ></textarea>
         </div>
-        <button 
-          type="submit" 
+        <button
+          type="submit"
           disabled={isSubmitting}
           className="w-full bg-blue-600 text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition-colors disabled:opacity-50"
         >

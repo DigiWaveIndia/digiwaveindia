@@ -48,7 +48,11 @@ export default function DashboardMockup() {
         <div className="bg-gray-800/50 rounded-lg p-4 border border-gray-700">
           <div className="flex items-end justify-between h-32 gap-2">
             {[40, 65, 45, 80, 55, 90, 70].map((height, i) => (
-              <div key={i} className="flex-1 bg-gradient-to-t from-blue-600 to-blue-400 rounded-t" style={{height: `${height}%`}}></div>
+              <div
+                key={i}
+                className="flex-1 bg-gradient-to-t from-blue-600 to-blue-400 rounded-t"
+                style={{ height: `${height}%` }}
+              ></div>
             ))}
           </div>
           <div className="flex justify-between mt-2 text-gray-500 text-xs">

@@ -1,16 +1,24 @@
 {
-  "name": "DigiWave India",
+  "name": "DigiWave India - Smart Digital Solutions",
   "short_name": "DigiWave",
-  "description": "Fast, affordable mobile apps and websites for small businesses",
+  "description": "Empowering Small Businesses to Go Digital",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#ffffff",
-  "theme_color": "#2563eb",
+  "background_color": "#0f172a",
+  "theme_color": "#06b6d4",
+  "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "/icon",
-      "sizes": "32x32",
-      "type": "image/png"
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
     }
   ]
 }

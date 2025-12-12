@@ -7,17 +7,20 @@ Your DigiWave India website has been completely redesigned with a modern, advanc
 ## 🎨 What's New
 
 ### 1. **Modern Hero Section**
+
 - Gradient background with animated patterns
 - Clear value proposition
 - Dual CTA buttons (Get Started + Talk to Us)
 - Wave SVG transition to next section
 
 ### 2. **Why DigiWave Section**
+
 - Emphasizes the mission: "When India's Small Businesses Grow, India Grows"
 - Highlights the problem and solution
 - Beautiful gradient card design
 
 ### 3. **3-Tier Digital Growth Framework** (Main Feature)
+
 - **Tier 1 - Smart Website**: Green-themed card with PWA features
 - **Tier 2 - Customer Engagement Layer**: Blue-themed card with automation features
 - **Tier 3 - Full Native Apps**: Purple-themed card for high-engagement businesses
@@ -25,26 +28,31 @@ Your DigiWave India website has been completely redesigned with a modern, advanc
 - Color-coded for easy visual distinction
 
 ### 4. **Technology Advantage Section**
+
 - 6 key benefits in gradient cards
 - AI-powered, fast deployment, affordable pricing
 - Modern UI/UX, scalable systems, security-first
 
 ### 5. **What We Build Section**
+
 - Grid layout showcasing 10 different solution types
 - Hover effects for interactivity
 
 ### 6. **Enhanced CTA & Contact Section**
+
 - Gradient background matching hero
 - Split layout: Contact info + Contact form
 - Integrated existing ContactForm component
 - Professional design with all contact details
 
 ### 7. **Modern Header**
+
 - Sticky navigation with scroll effect
 - Clean, minimal design
 - Mobile-responsive with updated menu
 
 ### 8. **Professional Footer**
+
 - Three-column layout
 - Quick links and contact information
 - Consistent branding
@@ -86,7 +94,7 @@ npm start
 
 - **Color Scheme**: Blue (#2563eb), Indigo, Purple gradients
 - **Typography**: Poppins (headings) + Inter (body)
-- **Tier Colors**: 
+- **Tier Colors**:
   - Tier 1: Green (#10b981)
   - Tier 2: Blue (#3b82f6)
   - Tier 3: Purple (#a855f7)

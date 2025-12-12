@@ -1,13 +1,16 @@
 export default function PhoneMockup({ type = 'website' }) {
   return (
-    <div className="relative mx-auto" style={{width: '280px'}}>
+    <div className="relative mx-auto" style={{ width: '280px' }}>
       {/* Phone Frame */}
       <div className="relative bg-gray-900 rounded-[3rem] p-3 shadow-2xl border-8 border-gray-800">
         {/* Notch */}
         <div className="absolute top-0 left-1/2 -translate-x-1/2 w-32 h-6 bg-gray-900 rounded-b-2xl z-10"></div>
-        
+
         {/* Screen */}
-        <div className="bg-white rounded-[2.5rem] overflow-hidden relative" style={{height: '560px'}}>
+        <div
+          className="bg-white rounded-[2.5rem] overflow-hidden relative"
+          style={{ height: '560px' }}
+        >
           {type === 'website' ? (
             <>
               {/* Website View */}
@@ -66,8 +69,11 @@ export default function PhoneMockup({ type = 'website' }) {
                 </div>
               </div>
               <div className="p-4 space-y-2">
-                {[1,2,3,4].map(i => (
-                  <div key={i} className="flex items-center gap-3 bg-gray-50 rounded-lg p-3">
+                {[1, 2, 3, 4].map((i) => (
+                  <div
+                    key={i}
+                    className="flex items-center gap-3 bg-gray-50 rounded-lg p-3"
+                  >
                     <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-full"></div>
                     <div className="flex-1">
                       <div className="w-24 h-2 bg-gray-300 rounded mb-1"></div>

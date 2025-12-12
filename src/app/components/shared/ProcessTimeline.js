@@ -4,14 +4,14 @@ export default function ProcessTimeline() {
     { icon: '🎨', title: 'Design', desc: 'Create mockups' },
     { icon: '⚙️', title: 'Development', desc: 'Build your solution' },
     { icon: '🚀', title: 'Launch', desc: 'Go live' },
-    { icon: '🤝', title: 'Support', desc: 'Ongoing assistance' }
+    { icon: '🤝', title: 'Support', desc: 'Ongoing assistance' },
   ];
 
   return (
     <div className="relative">
       {/* Timeline Line */}
       <div className="hidden md:block absolute top-12 left-0 right-0 h-1 bg-gradient-to-r from-blue-200 via-blue-400 to-blue-600"></div>
-      
+
       <div className="grid md:grid-cols-5 gap-8 relative">
         {steps.map((step, idx) => (
           <div key={idx} className="text-center">
@@ -23,7 +23,9 @@ export default function ProcessTimeline() {
                 {idx + 1}
               </div>
             </div>
-            <h3 className="text-lg font-semibold mb-2 font-poppins text-gray-900">{step.title}</h3>
+            <h3 className="text-lg font-semibold mb-2 font-poppins text-gray-900">
+              {step.title}
+            </h3>
             <p className="text-sm text-gray-600 font-inter">{step.desc}</p>
           </div>
         ))}
