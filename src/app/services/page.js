@@ -177,8 +177,9 @@ export default function ServicesPage() {
                       Who It's For
                     </h3>
                     <p className="text-gray-700 font-inter mb-6">
-                      Shops, clinics, salons, coaching centers, real estate,
-                      freelancers, and new businesses wanting to go digital.
+                      Businesses starting their digital journey or needing a
+                      professional online presence with basic customer
+                      interaction.
                     </p>
 
                     <div className="bg-green-50 border border-green-200 rounded-lg p-6 mb-6">
@@ -286,8 +287,8 @@ export default function ServicesPage() {
                       Who It's For
                     </h3>
                     <p className="text-gray-700 font-inter mb-6">
-                      Businesses needing repeat customers: gyms, salons,
-                      coaching centers, restaurants, grocery, services.
+                      Businesses wanting to build customer loyalty, automate
+                      communications, and increase repeat visits.
                     </p>
 
                     <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
@@ -388,16 +389,10 @@ export default function ServicesPage() {
                     <h3 className="text-2xl font-bold text-gray-900 mb-6 font-poppins">
                       Who It's For
                     </h3>
-                    <p className="text-gray-700 font-inter mb-4">
-                      Businesses requiring frequent user activity:
+                    <p className="text-gray-700 font-inter mb-6">
+                      Businesses requiring frequent customer interactions,
+                      complex workflows, or wanting maximum brand presence.
                     </p>
-                    <ul className="space-y-2 text-gray-700 font-inter ml-4 mb-6">
-                      <li>• On-demand delivery</li>
-                      <li>• Fitness & coaching apps</li>
-                      <li>• Grocery & pharmacy</li>
-                      <li>• Subscription businesses</li>
-                      <li>• Transport & service apps</li>
-                    </ul>
 
                     <div className="bg-purple-50 border border-purple-200 rounded-lg p-6 mb-6">
                       <h4 className="font-semibold text-purple-900 mb-2 font-poppins">
@@ -433,13 +428,13 @@ export default function ServicesPage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
                 href="/contact"
-                className="bg-cyan-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-600 transition-all"
+                className="btn-primary"
               >
                 Book a Free Consultation
               </Link>
               <Link
                 href="/pricing"
-                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-white hover:text-slate-900 transition-all"
+                className="bg-transparent border-2 border-white text-white px-8 py-4 rounded-xl text-lg font-semibold hover:bg-white hover:text-slate-900 transition-all"
               >
                 View Pricing
               </Link>

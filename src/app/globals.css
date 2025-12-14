@@ -89,3 +89,28 @@ html {
 .gradient-text {
   @apply bg-gradient-to-r from-sky-500 via-blue-600 to-indigo-600 bg-clip-text text-transparent;
 }
+
+/* Hero Background Classes */
+.hero-mobile {
+  background-image: url('/images/digiwave_mobile_v1.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #0f172a;
+}
+
+.hero-tablet {
+  background-image: url('/images/digiwave_tab_v1.png');
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Force header background */
+header {
+  background-color: #0f172a !important;
+}

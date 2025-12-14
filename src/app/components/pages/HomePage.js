@@ -1,9 +1,9 @@
+'use client';
+
 import Link from 'next/link';
 import Navigation from '../shared/Navigation';
 import Footer from '../shared/Footer';
-import DashboardMockup from '../shared/DashboardMockup';
 import TrustBadges from '../shared/TrustBadges';
-import FeatureShowcase from '../shared/FeatureShowcase';
 
 export default function HomePage() {
   return (
@@ -14,26 +14,19 @@ export default function HomePage() {
         {/* Hero Section */}
         <section className="relative overflow-hidden">
           {/* Mobile Hero */}
-          <div
-            className="md:hidden relative min-h-screen flex items-center justify-center"
-            style={{
-              backgroundImage: 'url(/images/digiwave_mobile.png)',
-              backgroundSize: 'contain',
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat',
-              backgroundColor: '#0f172a',
-            }}
-          >
+          <div className="md:hidden relative min-h-screen hero-mobile">
             <div className="absolute inset-0 bg-slate-900/70"></div>
 
             <div className="relative text-center px-6 py-20">
-              <span className="inline-block bg-cyan-500/20 text-cyan-400 px-4 py-2 rounded-full text-sm font-semibold mb-6 border border-cyan-500/30">
-                🚀 Digital Transformation
-              </span>
+              <div className="pt-16 mb-8">
+                <span className="inline-block bg-cyan-500/20 text-cyan-400 px-4 py-2 rounded-full text-sm font-semibold border border-cyan-500/30">
+                  🚀 Digital Transformation
+                </span>
+              </div>
 
               <h1 className="text-4xl font-bold font-poppins text-white mb-4">
-                Go Digital
-                <span className="block text-cyan-400">Today</span>
+                Empowering Small Businesses
+                <span className="block text-cyan-400">to Go Digital</span>
               </h1>
 
               <p className="text-lg text-gray-200 mb-8">
@@ -41,7 +34,7 @@ export default function HomePage() {
               </p>
             </div>
 
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-full max-w-xs px-6">
+            <div className="absolute bottom-16 left-1/2 transform -translate-x-1/2 w-full max-w-xs px-6">
               <div className="space-y-3">
                 <Link
                   href="/contact?service=consultation#contact-form"
@@ -62,15 +55,7 @@ export default function HomePage() {
           </div>
 
           {/* Tablet Hero */}
-          <div
-            className="hidden md:block lg:hidden relative min-h-screen w-full flex items-start justify-center pt-40 mt-16"
-            style={{
-              backgroundImage: 'url(/images/digiwave_tab.png)',
-              backgroundSize: 'cover',
-              backgroundPosition: 'center top',
-              backgroundRepeat: 'no-repeat',
-            }}
-          >
+          <div className="hidden md:block lg:hidden relative min-h-screen w-full flex items-start justify-center pt-40 mt-16 hero-tablet">
             <div className="absolute inset-0 bg-slate-900/75"></div>
 
             <div className="relative text-center px-12 py-24 max-w-4xl mx-auto mt-20">
@@ -482,7 +467,7 @@ export default function HomePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Link
                 href="/contact"
-                className="bg-cyan-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-cyan-600 transition-all shadow-lg"
+                className="btn-primary"
               >
                 Book a Free Demo
               </Link>
@@ -490,7 +475,7 @@ export default function HomePage() {
                 href="https://wa.me/919281040446"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 text-white px-8 py-4 rounded-lg text-lg font-semibold hover:bg-green-600 transition-all flex items-center gap-2"
+                className="bg-green-500 text-white px-8 py-4 rounded-xl font-semibold hover:bg-green-600 transition-all flex items-center gap-2 shadow-lg"
               >
                 <span>💬</span> WhatsApp Us Now
               </a>

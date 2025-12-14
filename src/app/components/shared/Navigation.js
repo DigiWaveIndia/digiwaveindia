@@ -1,22 +1,13 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Logo from './Logo';
 
 export default function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 20);
-    };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
 
   const navLinks = [
     { href: '/', label: 'Home' },
@@ -28,9 +19,7 @@ export default function Navigation() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-gray-900 shadow-lg' : 'bg-gray-900/95 backdrop-blur-sm'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-slate-900 shadow-lg transition-all duration-300"
     >
       <nav className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
@@ -88,7 +77,7 @@ export default function Navigation() {
         </div>
 
         {isMobileMenuOpen && (
-          <div className="lg:hidden absolute top-full left-0 right-0 bg-gray-900 shadow-lg border-t border-gray-800">
+          <div className="lg:hidden absolute top-full left-0 right-0 bg-slate-900 shadow-lg border-t border-slate-800">
             <div className="px-4 py-2 space-y-2">
               {navLinks.map((link) => (
                 <Link
